@@ -13,7 +13,7 @@
  * 初次调用getopt时，optind=1
  * 当选项是紧密连接的，形如-abc，则optind会三次指向该字
  * 同时函数内部会有状态标志，从而从这一个字中解析出三个选项a，b，c
- * 当选项解析完后，optind就指向了第一个参数，[opting, argc)就是命令行的所有参数
+ * 当选项解析完后，optind就指向了第一个参数，[optind, argc)就是命令行的所有参数
  */
 
 #include <stdio.h>
